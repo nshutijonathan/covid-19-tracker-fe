@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HomeScreen from "./screens/HomeScreen";
-
+import SingleCaseScreen from "./screens/SingleCaseScreen";
 const App = () => {
   return (
     <Router>
@@ -12,6 +12,7 @@ const App = () => {
       <Container>
         <main className="py-3">
           <Route path="/" component={HomeScreen} exact />
+          <Route path="/cases/:id" component={SingleCaseScreen} exact />
         </main>
       </Container>
 
